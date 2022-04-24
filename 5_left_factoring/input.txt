@@ -1,0 +1,3 @@
+A -> ab1|ab1|c|d
+B -> bc1|bc2|bc3
+C -> e
