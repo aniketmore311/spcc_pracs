@@ -1,0 +1,23 @@
+PRG START 0
+     MACRO
+&LAB INCR &ARG1,&ARG2,&ARG3
+&LAB A 1,&ARG1
+     A 2,&ARG2
+     A 3,&ARG3
+     MEND
+LOOP1 INCR DATA1,DATA2,DATA3
+DATA1 DC F'5'
+DATA2 DC F'10'
+DATA3 DC F'15' 	
+
+/**
+ * to be parsed correctly by the program
+ * 1. all argument lists and parameter lists must be comma saperated with no spaces between them
+ * eg. &ARG1,&ARG2,&ARG3 and not &ARG1, &ARG2, &ARG3
+ * 
+ * 2. only 1 space between different parts of a line
+ * eg. &LAB A 1,&ARG1 and not &LAB  A    1,&ARG1
+ * 
+ * 3. there can be multiple spaces at the start or end of a line as the lines are trimmed while reading
+ */
+
