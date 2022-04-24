@@ -1,0 +1,6 @@
+&LAB INCR &ARG1,&ARG2,&ARG3
+#0 A 1,#1
+A 2,#2
+A 3,#3
+MEND
+
