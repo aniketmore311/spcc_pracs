@@ -15,8 +15,8 @@ public class Code {
         List<String> firstInput = readLines(new BufferedReader(new FileReader("first.txt")));
         Map<String, List<String>> productions = parseProductions(productionsInput);
         Map<String, List<String>> first = parseFirst(firstInput);
-        System.out.println(productions);
-        System.out.println(first);
+        // System.out.println(productions);
+        // System.out.println(first);
         Solver sol = new Solver(productions, first, 'E');
         sol.findFollow();
         sol.printFollow();
